@@ -76,3 +76,14 @@ img {
   text-shadow: 0 1px 3px rgba(0,0,0,.3);
   font-family: 'Fira Sans Condensed', Helvetica, Arial, Lucida, sans-serif;
 }
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.gallery .col-md-3 {
+  padding: 0 5px;
+}
