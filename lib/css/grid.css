@@ -4,7 +4,7 @@ body {
 }
 
 section {
-  background-color: #000000;
+  background-color: #393939;
   color: #fff;
 }
 
@@ -42,6 +42,16 @@ section {
 .before-shadow:hover:after {
   -webkit-box-shadow: inset -1px -50px 35px 0px rgba(0,0,0,0.71);
   box-shadow: inset -1px -50px 35px 0px rgba(0,0,0,0.71);
+}
+
+.full-height {
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .before-shadow span {
