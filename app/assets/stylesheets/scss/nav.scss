@@ -1,0 +1,89 @@
+$link-color: #787878;
+$red: #ae5438;
+
+nav .nav-menu {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  list-style: none;
+  margin: 0;
+  li {
+    margin: 0 15px;
+  }
+  a {
+    text-shadow: 0 1px 3px rgba(0,0,0,.3);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color: $link-color;
+    border-bottom: 2px solid transparent;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 3px 0;
+    border-bottom: none;
+  }
+  a:hover {
+    border-bottom: 2px solid $red;
+    padding-bottom: 1px;
+  }
+}
+
+nav .change-lang {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  list-style: none;
+  li {
+    margin: 0 15px;
+  }
+  a {
+    position: relative;
+    text-shadow: 0 1px 3px rgba(0,0,0,.3);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color: $link-color;
+    border-bottom: 2px solid transparent;
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 3px 0;
+    border-bottom: none;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  a:hover {
+    border-bottom-color: transparent;
+    color: #000;
+  }
+  a.dot:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #000;
+    right: -17px;
+    top: 14px;
+  }
+}

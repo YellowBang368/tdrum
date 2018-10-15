@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tdrumrails</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fira+Sans+Condensed|PT+Sans|PT+Sans+Narrow|Roboto|Raleway" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <nav class="color-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-3">
+            <ul class="nav-menu">
+              <li><a href="#">О мастерской</a></li>
+              <li><a href="#">Инструменты</a></li>
+              <li><a href="#">Блог</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-3">
+
+          </div>
+          <div class="col-lg-4 col-md-3">
+            <ul class="nav-menu">
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="change-lang">
+              <li><a class="dot" href="#">рус</a></li>
+              <li><a href="#">eng</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>
