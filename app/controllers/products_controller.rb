@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all[0..5]
-    @reviews = Review.all[0..1]
+    @reviews = Review.all[1..2]
   end
 
   def new
