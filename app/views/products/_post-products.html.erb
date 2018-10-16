@@ -1,0 +1,35 @@
+<section class="color-light products">
+  <div class="container conteiner-products">
+    <div class="row" style="padding: 0 50px;">
+      <% show_products.each do |product| %>
+      <div class="col-md-4 col-sm-12">
+        <div class="product">
+          <div class="product-bg"></div>
+          <div class="product-content">
+            <%= image_tag "firstdrum.png" %>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <h4 class="product-title"><%= product.title %></h4>
+                <p class="product-params">34 см 8 нот</p>
+              </div>
+              <div class="col-md-4 col-sm-12 full-height justify-content-center">
+                <p class="product-price">$ <%= product.price %></p>
+                <a class="product-order-button">заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <% if see_all_button %>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <a href="#" class="see-all">Посмотреть все<%= icon("fa", "angle-right") %></a>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</section>

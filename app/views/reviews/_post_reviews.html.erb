@@ -1,0 +1,42 @@
+<section class="reviews color-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="margin-bottom: 50px;">
+        <h2>Отзывы</h2>
+      </div>
+    </div>
+    <div class="row">
+      <% show_reviews.each do |review| %>
+         <div class="col-md-6 col-sm-12">
+           <div class="review">
+             <div class="row review-content">
+               <div class="col-12">
+                 <h4><%= review.recipient %></h4>
+                 <div class="body closed">
+                   <p><%= review.body %></p>
+                 </div>
+               </div>
+             </div>
+             <div class="row review-bottom">
+               <div class="col-md-6 col-sm-12">
+                 <p class="created_at"><%= review.created_at.strftime("%d.%m.%Y") %></p>
+               </div>
+               <div class="col-md-6 col-sm-12">
+                 <div class="read-more">Читать больше<%= icon("fa", "angle-down") %></div>
+               </div>
+             </div>
+           </div>
+         </div>
+      <% end %>
+    </div>
+  </div>
+  <% if see_all_button %>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <a href="#" class="see-all">Все отзывы<%= icon("fa", "angle-right") %></a>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</section>
