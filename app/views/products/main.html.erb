@@ -1,0 +1,40 @@
+<section class="color-light header-index">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="section-title">О мастерской</h2>
+        <div class="text">
+          <p>Приветствуем тебя на нашем сайте, друг.</p>
+          <p>Мы занимаемся изготовлением музыкальных инструментов нового поколения имя которым Happy Drum (Глюкофон).</p>
+          <p>Наша мастерская была основана в сентябре 2014 года, и была одной из первых мастерских в Украине.</p>
+          <p>Нами был проведен целый ряд революционных нововведений и улучшений,  касаемых звучания и внешнего вида язычковых барабанов.</p>
+          <p>Наши инструменты можно найти практически во всех уголках вашей планеты.</p>
+          <p>Все инструменты ручной работы</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render partial: "post-products", :locals => {:show_products => @products, :see_all_button => true} %>
+<%= render partial: "reviews/post_reviews", :locals => {:show_reviews => @reviews, :see_all_button => true} %>
+
+
+<section class="color-light form-index">
+  <div class="container">
+    <div class="row justify-content-center">
+      <h2 class="section-title" style="margin-top: 125px;">Остались вопросы?</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form class="main-form">
+          <input placeholder="Введите имя" type="text" />
+          <input placeholder="E-mail" type="email" />
+          <input style="flex: 1 1 100%; max-width: 100%;" placeholder="Введите телефон" type="tel" />
+          <textarea class="text-area" name="contact_text" placeholder="Ваш вопрос"></textarea>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

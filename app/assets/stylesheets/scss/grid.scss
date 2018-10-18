@@ -26,3 +26,27 @@
   -ms-flex-pack: center;
   justify-content: center;
 }
+
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  color: #1e1e1e;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+.section-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background: #ae5438;
+  bottom: 0;
+  left: -webkit-calc(50% - 35px);
+  left: -moz-calc(50% - 35px);
+  left: calc(50% - 35px);
+}

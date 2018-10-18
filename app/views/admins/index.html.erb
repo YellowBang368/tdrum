@@ -1,0 +1,25 @@
+<div class="admin-panel">
+  <div class="color-light filter">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title">Админ-панель</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3 col-sm-12">
+          <a class="active" href="#">Товары</a>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <a href="#">Отзывы</a>
+        </div>
+      </div>
+      <div class="row justify-content-center" style="margin-top: 25px;">
+        <div class="col-md-3">
+          <%= link_to "Создать новый", new_product_path %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%= render partial: "products/post-products", :locals => {:show_products => @products, :see_all_button => false} %>
+  <%= render partial: "reviews/post_reviews", :locals => {:show_reviews => @reviews, :see_all_button => false, :title => false} %>
+</div>

@@ -1,10 +1,14 @@
 <section class="reviews color-light">
   <div class="container">
+    <% if defined?(title) && title == false %>
+    <div class="row" style="margin: 75px 0;"></div>
+    <% else %>
     <div class="row">
       <div class="col-12" style="margin-bottom: 50px;">
-        <h2>Отзывы</h2>
+        <h2 class="section-title">Отзывы</h2>
       </div>
     </div>
+    <% end %>
     <div class="row">
       <% show_reviews.each do |review| %>
          <div class="col-md-6 col-sm-12">
@@ -34,7 +38,9 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-4">
-          <a href="#" class="see-all">Все отзывы<%= icon("fa", "angle-right") %></a>
+          <%= link_to reviews_path, class: "see-all", method: "get" do %>
+            Все отзывы<%= icon("fa", "angle-right") %>
+          <% end %>
         </div>
       </div>
     </div>

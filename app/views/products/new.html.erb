@@ -1,12 +1,17 @@
-<%= form_for :product do |f| %>
+<section class="color-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <h4 class="section-title" style="margin: 50px 0;">Новый продукт</h4>
+        <%= form_for :product, :html => {class: 'main-form'} do |f| %>
 
-  <%= f.label :title %><br/>
-  <%= f.text_field :title %><br/>
+          <%= f.text_field :title, placeholder: "Название" %><br/>
 
-  <%= f.label :price %><br/>
-  <%= f.text_field :price %><br/>
+          <%= f.text_field :price, placeholder: "Цена" %><br/>
 
-
-
-  <%= f.submit %>
-  <% end %>
+        <%= f.submit class: "button" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>

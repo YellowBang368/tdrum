@@ -1,0 +1,78 @@
+$orange: #ae5438;
+
+
+.header-reviews, .header-products {
+  .container {
+    padding: 75px 0;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 100;
+    color: #c4c4c4;
+    line-height: 1.48;
+    margin-bottom: 12px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+  a {
+    background: $orange;
+    color: #000;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    font-size: 1.25em;
+    color: #202020;
+    padding: 11px 0 23px;
+    padding-top: 11px;
+    margin-bottom: 10px;
+    border: none;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    bottom: -83px;
+    padding-top: 18px;
+    margin-bottom: 50px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.filter {
+  padding-top: 50px;
+  a {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    color: #202020;
+    background: #464646;
+    padding: 16px 0 17px;
+    border-bottom: 4px solid transparent;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  a:hover {
+    text-decoration: none;
+    background: #666;
+    border-bottom-color: #fff;
+  }
+  a.active {
+    text-decoration: none;
+    background: #666;
+    color: #fff;
+  }
+  a.active:hover {
+    border-bottom-color: #666;
+  }
+}

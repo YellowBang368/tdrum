@@ -27,7 +27,9 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-4">
-        <a href="#" class="see-all">Посмотреть все<%= icon("fa", "angle-right") %></a>
+        <%= link_to products_path, class: "see-all" do %>
+          Посмотреть все<%= icon("fa", "angle-right") %>
+        <% end %>
       </div>
     </div>
   </div>

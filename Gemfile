@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 5.3.1'
+gem 'bcrypt'
 
 
 group :development, :test do

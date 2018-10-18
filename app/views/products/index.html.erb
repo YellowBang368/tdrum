@@ -1,20 +1,32 @@
-<section class="color-light header-index">
+<div class="header-products color-dark">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-6">
-        <h2>О мастерской</h2>
-        <div class="text">
-          <p>Приветствуем тебя на нашем сайте, друг.</p>
-          <p>Мы занимаемся изготовлением музыкальных инструментов нового поколения имя которым Happy Drum (Глюкофон).</p>
-          <p>Наша мастерская была основана в сентябре 2014 года, и была одной из первых мастерских в Украине.</p>
-          <p>Нами был проведен целый ряд революционных нововведений и улучшений,  касаемых звучания и внешнего вида язычковых барабанов.</p>
-          <p>Наши инструменты можно найти практически во всех уголках вашей планеты.</p>
-          <p>Все инструменты ручной работы</p>
-        </div>
+      <div class="col-md-5">
+        <h4 class="section-title">Инструменты</h4>
+        <p>Благодоря пентатоническому звуковому ряду, "слажать" на этом инструменте невозможно.</p>
+        <p>Мы, с радостью, поможем попасть на нашу планету и подобрать подходящий для этого инструмент.</p>
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<%= render partial: "post-products", :locals => {:show_products => @products, :see_all_button => true} %>
-<%= render partial: "reviews/post_reviews", :locals => {:show_reviews => @reviews, :see_all_button => true} %>
+<div class="color-light filter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-12">
+        <a class="active" href="#">Все</a>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <a href="#">Группа 1</a>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <a href="#">Группа 2</a>
+      </div>
+      <div class="col-md-3 col-sm-12">
+        <a href="#">Группа 3</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render partial: "post-products", :locals => {:show_products => @products, :see_all_button => false} %>

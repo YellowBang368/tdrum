@@ -1,8 +1,12 @@
 class ProductsController < ApplicationController
 
-  def index
+  def main
     @products = Product.all[0..5]
     @reviews = Review.all[1..2]
+  end
+
+  def index
+    @products = Product.all
   end
 
   def new
