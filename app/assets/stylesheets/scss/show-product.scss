@@ -1,0 +1,106 @@
+.show-product {
+  p {
+    font-family: "NoFont", sans-serif;
+    font-weight: 100;
+    color: #c4c4c4;
+    line-height: 1.44;
+    margin-bottom: 12px;
+    font-size: 1em;
+    font-family: "Raleway", sans-serif;
+  }
+  h2 {
+    color: #fff;
+    font-size: 24px;
+    font-family: "fira Sans", sans-serif;
+  }
+  .section-title {
+    color: #444;
+  }
+  .product-price {
+    color: #fff;
+    font-size: 32px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .product-circle {
+    width: 360px;
+    height: 360px;
+    margin-top: 0;
+    margin-bottom: 26px;
+    background: #1f1f1f;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 75px auto 103px;
+    margin-top: 20px;
+    margin-bottom: 103px;
+    text-align: center;
+    position: relative;
+  }
+  .product-image {
+    width: 320px;
+    height: 240px;
+    position: absolute;
+    top: -webkit-calc(50% - 128px);
+    top: -moz-calc(50% - 128px);
+    top: calc(50% - 128px);
+    left: -webkit-calc(50% - 160px);
+    left: -moz-calc(50% - 160px);
+    left: calc(50% - 160px);
+  }
+  .drum-colors {
+    position: absolute;
+    top: 35%;
+    margin: 0;
+    padding: 0;
+    right: 25px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    img {
+      width: 22px;
+      margin: 8px 0;
+      height: 22px;
+      cursor: pointer;
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      transition: all .2s ease;
+    }
+    img:hover {
+      transform: scale(2);
+    }
+  }
+  .button {
+    background: #a5644a;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    font-size: 1.25em;
+    color: #202020;
+    padding: 22px 0 23px;
+    margin-bottom: 10px;
+    border: none;
+    width: 90%;
+    position: absolute;
+    bottom: -43px;
+    font-family: "Fira Sans", sans-serif;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  .button:hover {
+    background: #fff;
+    color: #2c2c2c;
+  }
+  .colors {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -7,6 +7,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Fira+Sans+Condensed|PT+Sans|PT+Sans+Narrow|Roboto|Raleway" rel="stylesheet">
 
   </head>
@@ -23,7 +28,10 @@
             </ul>
           </div>
           <div class="col-lg-4 col-md-3">
-
+            <%= link_to root_path, class: "logo" do %>
+              <h4>Супер-пупер</h4>
+              <h4>Мастерская</h4>
+            <% end %>
           </div>
           <div class="col-lg-4 col-md-3">
             <ul class="nav-menu">

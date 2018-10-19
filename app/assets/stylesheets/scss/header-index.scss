@@ -22,4 +22,24 @@
   .text {
     text-align: center;
   }
+  .circle {
+    background: #1f1f1f;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 584px;
+    height: 584px;
+    margin: 75px auto 103px;
+    text-align: center;
+    position: relative;
+    img {
+      position: absolute;
+      top: -webkit-calc(50% - 211px);
+      top: -moz-calc(50% - 211px);
+      top: calc(50% - 211px);
+      left: -webkit-calc(50% - 209px);
+      left: -moz-calc(50% - 209px);
+      left: calc(50% - 209px);
+      display: block;
+    }
+  }
 }
