@@ -15,23 +15,21 @@
     <nav class="color-dark">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-5 col-md-4">
+          <div class="col-lg-5 col-md-4 justify-content-center">
             <ul class="nav-menu">
-              <li><a href="#">О проекте</a></li>
-              <li><a href="#">Инструменты</a></li>
-              <li><a href="#">ИИ</a></li>
-              <li><a href="#">Обучение игре</a></li>
+              <li><%= link_to "О проекте", about_path %></li>
+              <li><%= link_to "Инструменты", products_path %></li>
+              <li><%= link_to "ИИ", ai_path %></li>
+              <li><%= link_to "Инвесторам", investors_path %></li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-3">
             <%= link_to root_path, class: "logo" do %>
-              <h4>Супер-пупер</h4>
-              <h4>Мастерская</h4>
+              <h4>TetaDrum.com</h4>
             <% end %>
           </div>
-          <div class="col-lg-5 col-md-4">
+          <div class="col-lg-5 col-md-4 justify-content-center">
             <ul class="nav-menu">
-              <li><a href="#">Инвесторам</a></li>
               <li><%= link_to "Отзывы", reviews_path %></li>
               <li><a href="#">Контакты</a></li>
               <ul class="change-lang">
@@ -49,20 +47,20 @@
     <footer class="color-deep-dark">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-4 col-sm-12" style="padding-left: 200px;">
-            <h4>Контакты</h4>
+          <div class="col-md-4 col-sm-12" >
             <ul class="contacts">
-              <li><a href="#">+7-964-(555)-10-98</a></li>
-              <li><a href="#">tdrum@gmail.com</a></li>
+              <li><a href="#">Техпроцесс</a></li>
+              <li><a href="#">Как играть</a></li>
+              <li><a href="#">Эффекты</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Интерактивный инструмент tetaDram</a></li>
             </ul>
           </div>
           <div class="col-md-4 col-sm-12">
-            <h4>Адрес</h4>
-            <p>aaa aaaaaaa aaaaaaaaaaaaa aaaaaaaa aaaaaaaaaaaaa aaaa aaaaaaaaaaaaaa aaaaaaaa aaaa aaaaaaaaa aaaaaaaaa</p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4">
+            <form class="justify-content-center">
+              <input placeholder="email/телефон"></input>
+              <button class="button">Оставить</button>
+            </form>
             <ul class="social-networks">
               <li><a href='https://vk.com/gluckofon'><i class="fab fa-vk"></i></a></li>
               <li><a href='#'><i class="fab fa-facebook-f"></i></a></li>

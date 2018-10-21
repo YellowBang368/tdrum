@@ -93,8 +93,14 @@ nav .change-lang {
 nav .logo {
   text-decoration: none;
   color: $red;
+  align-items: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   width: 100%;
-  text-align: center;
+  height: 100%;
   h4 {
     font-size: 22px;
     font-family: "Raleway", sans-serif;

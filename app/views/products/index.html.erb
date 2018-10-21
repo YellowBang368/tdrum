@@ -1,3 +1,16 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".filter a").click(function(){
+      var $this = $(this);
+      var $contentId = $this.attr("data");
+      $(".filter a").removeClass("active");
+      $this.addClass("active");
+      $(".content").hide();
+      $("#"+$contentId).show();
+    });
+  });
+</script>
+
 <div class="header-products color-dark">
   <div class="container">
     <div class="row justify-content-center">
@@ -14,19 +27,30 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-12">
-        <a class="active" href="#">Все</a>
+        <a class="active" data="all-products">Все</a>
       </div>
       <div class="col-md-3 col-sm-12">
-        <a href="#">Группа 1</a>
+        <a data="small-drums">Маленькие</a>
       </div>
       <div class="col-md-3 col-sm-12">
-        <a href="#">Группа 2</a>
+        <a data="medium-drums">Средние</a>
       </div>
       <div class="col-md-3 col-sm-12">
-        <a href="#">Группа 3</a>
+        <a data="big-drums">Большие</a>
       </div>
     </div>
   </div>
 </div>
 
-<%= render partial: "post-products", :locals => {:show_products => @products, :see_all_button => false} %>
+<div class="content" id="all-products">
+  <%= render partial: "post-products", :locals => {:show_products => @products, :see_all_button => false} %>
+</div>
+<div class="content" id="small-drums">
+  <%= render partial: "post-products", :locals => {:show_products => @small_drums, :see_all_button => false} %>
+</div>
+<div class="content" id="medium-drums">
+  <%= render partial: "post-products", :locals => {:show_products => @medium_drums, :see_all_button => false} %>
+</div>
+<div class="content" id="big-drums">
+  <%= render partial: "post-products", :locals => {:show_products => @big_drums, :see_all_button => false} %>
+</div>

@@ -1,0 +1,26 @@
+<section class="color-light header-index">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="circle">
+          <img src="https://image.ibb.co/gMn9vf/main-drum.png" />
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="section-title">О проекте</h2>
+        <div class="text">
+          <p>Приветствуем Вас на сайте смарт инструмента tetaDrum
+            — наш ИИ обнаружил у Вас высокое желание приобрести наш девайс,
+             нет ничего проще — выберите подходящий размер,
+              дизайн и функционал и нажмите кнопку купить! </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render partial: "products/post-products", :locals => {:show_products => @products, :see_all_button => true} %>
+<%= render partial: "reviews/post_reviews", :locals => {:show_reviews => @reviews, :see_all_button => true} %>
+<%= render partial: "pages/post_contact_form" %>

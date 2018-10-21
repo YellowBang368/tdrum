@@ -91,3 +91,62 @@ footer {
     color: #fcaf45;
   }
 }
+
+footer form {
+  margin: 20px 0;
+  input {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 48%;
+    -moz-box-flex: 1;
+    -ms-flex: 1 1 48%;
+    flex: 1 1 48%;
+    max-width: 48%;
+    border: solid 4px #2c2c2c;
+    background: transparent;
+    font-size: 1.125em;
+    line-height: 1.33;
+    font-weight: 300;
+    color: #8e8e8e;
+    padding: 8px 15px 9px;
+    color: #8e8e8e;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  input::placeholder {
+    color: #808080;
+    font-family: "Raleway", sans-serif;
+  }
+  input:focus {
+    border-color: #ae5438;
+    outline: none;
+  }
+  input[type="submit"] {
+    border: 1px solid $orange;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding: 8px 5px;
+    color: $orange;
+    margin-left: 15px;
+  }
+  .button {
+    background: #a5644a;
+    color: #000;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    font-size: 1.25em;
+    color: #202020;
+    padding: 18px 60px 20px;
+    margin-left: 15px;
+    border: none;
+  }
+  .button:hover {
+    background: #ab5438;
+    color: #2c2c2c;
+  }
+}
