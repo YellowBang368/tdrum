@@ -12,9 +12,6 @@ Rails.application.routes.draw do
   root "products#main"
 
   resources :products
-  post "product/new", to: "products#create"
-  get "products", to: "products#index"
-
-  resource :reviews
-  post "review/new", to: "reviews#create"
+  post "products/new", to: "products#create"
+  resources :reviews
 end
