@@ -14,28 +14,30 @@
   <body>
     <nav class="color-dark">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-3">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-4">
             <ul class="nav-menu">
-              <li><a href="#">О мастерской</a></li>
+              <li><a href="#">О проекте</a></li>
               <li><a href="#">Инструменты</a></li>
-              <li><a href="#">Блог</a></li>
+              <li><a href="#">ИИ</a></li>
+              <li><a href="#">Обучение игре</a></li>
             </ul>
           </div>
-          <div class="col-lg-4 col-md-3">
+          <div class="col-lg-2 col-md-3">
             <%= link_to root_path, class: "logo" do %>
               <h4>Супер-пупер</h4>
               <h4>Мастерская</h4>
             <% end %>
           </div>
-          <div class="col-lg-4 col-md-3">
+          <div class="col-lg-5 col-md-4">
             <ul class="nav-menu">
+              <li><a href="#">Инвесторам</a></li>
               <li><%= link_to "Отзывы", reviews_path %></li>
               <li><a href="#">Контакты</a></li>
-            </ul>
-            <ul class="change-lang">
-              <li><a class="dot" href="#">рус</a></li>
-              <li><a href="#">eng</a></li>
+              <ul class="change-lang">
+                <li><a class="dot" href="#">рус</a></li>
+                <li><a href="#">eng</a></li>
+              </ul>
             </ul>
           </div>
         </div>
