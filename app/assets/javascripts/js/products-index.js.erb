@@ -20,4 +20,9 @@ $(document).ready(function(){
     $(".overlay-modal").css("display", "none");
     $(".modal").css("display", "none");
   });
+
+  $(".choose-color li").click(function(){
+    $(".choose-color li").removeClass("active");
+    $(this).addClass("active");
+  });
 });
