@@ -19,7 +19,7 @@
               </div>
               <div class="col-md-4 col-sm-12 full-height justify-content-center">
                 <p class="product-price">$ <%= product.price %></p>
-                <a class="product-order-button">заказать</a>
+                <%= link_to "заказать", product, method: "GET", class:"product-order-button" %>
               </div>
             </div>
           </div>

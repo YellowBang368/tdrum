@@ -73,7 +73,8 @@
       </div>
     </footer>
 
+    <% if controller_name == "products" && action_name == "show" %>
     <%= render partial: "layouts/dialog" %>
-
+    <% end %>
   </body>
 </html>
