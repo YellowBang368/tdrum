@@ -1,0 +1,23 @@
+$(document).ready(function(){
+  var $products = $(".content")
+  $products.hide();
+  $(".content#all-products").show();
+  $(".filter a").click(function(){
+    var $this = $(this);
+    var $contentId = $this.attr("data");
+    $(".filter a").removeClass("active");
+    $this.addClass("active");
+    $(".content").hide();
+    $("#"+$contentId).show();
+  });
+
+  $(".open-buy-dialog").click(function(){
+    $(".overlay-modal").css("display", "block");
+    $(".modal").css("display", "flex");
+  });
+
+  $(".modal-close").click(function(){
+    $(".overlay-modal").css("display", "none");
+    $(".modal").css("display", "none");
+  });
+});

@@ -4,6 +4,9 @@
     <title>Tdrumrails</title>
     <%= csrf_meta_tags %>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
@@ -20,7 +23,6 @@
               <li><%= link_to "О проекте", about_path %></li>
               <li><%= link_to "Инструменты", products_path %></li>
               <li><%= link_to "ИИ", ai_path %></li>
-              <li><%= link_to "Инвесторам", investors_path %></li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-3">
@@ -30,8 +32,8 @@
           </div>
           <div class="col-lg-5 col-md-4 justify-content-center">
             <ul class="nav-menu">
+              <li><%= link_to "Инвесторам", investors_path %></li>
               <li><%= link_to "Отзывы", reviews_path %></li>
-              <li><a href="#">Контакты</a></li>
               <ul class="change-lang">
                 <li><a class="dot" href="#">рус</a></li>
                 <li><a href="#">eng</a></li>
@@ -47,7 +49,7 @@
     <footer class="color-deep-dark">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-4 col-sm-12" >
+          <div class="col-md-6 col-sm-12" >
             <ul class="contacts">
               <li><a href="#">Техпроцесс</a></li>
               <li><a href="#">Как играть</a></li>
@@ -56,7 +58,7 @@
               <li><a href="#">Интерактивный инструмент tetaDram</a></li>
             </ul>
           </div>
-          <div class="col-md-4 col-sm-12">
+          <div class="col-md-6 col-sm-12">
             <form class="justify-content-center">
               <input placeholder="email/телефон"></input>
               <button class="button">Оставить</button>
@@ -70,5 +72,8 @@
         </div>
       </div>
     </footer>
+
+    <%= render partial: "layouts/dialog" %>
+
   </body>
 </html>

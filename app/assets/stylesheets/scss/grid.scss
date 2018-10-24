@@ -51,6 +51,10 @@
   left: calc(50% - 35px);
 }
 
+.white {
+  color: #fff!important;
+}
+
 .text-lead {
   font-family: "NoFont", sans-serif;
   font-weight: 100;
@@ -59,4 +63,14 @@
   margin-bottom: 12px;
   font-size: 1em;
   font-family: "Raleway", sans-serif;
+}
+
+.to-end {
+  justify-content: flex-end;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
 }

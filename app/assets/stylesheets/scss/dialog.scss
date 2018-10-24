@@ -1,0 +1,126 @@
+$orange: #ae5438;
+
+.overlay-modal {
+  background: rgba(43, 46, 56, .9);
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  height: 80vw;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  overflow: auto;
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
+  padding: 15px 0;
+}
+
+.modal-content {
+  height: 100%;
+  position: relative;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: #202020;
+  width: 100%;
+  max-width: 1170px;
+  padding: 70px 0 50px;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  .modal-close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    left: auto;
+    color: #fff;
+    display: block;
+    overflow: visible;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    -moz-transition: color .2s;
+    transition: color .2s;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    i {
+      font-size: 31px;
+      -webkit-transition: color .2s;
+      -o-transition: color .2s;
+      -moz-transition: color .2s;
+      transition: color .2s;
+    }
+  }
+  .modal-close:hover {
+    color: $orange;
+    i {
+      color: $orange;
+    }
+  }
+}
+
+.modal-content {
+  .title {
+    color: #444;
+    font-weight: 600;
+    font-family: "Fira Sans", sans-serif;
+    text-align: left;
+  }
+  p {
+    font-weight: 100;
+    text-align: left;
+    color: #c4c4c4;
+    line-height: 1.44;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-family: "NoFont", sans-serif;
+  }
+  .product-price {
+    color: #fff;
+    font-size: 32px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.modal-content .choose-color {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+  list-style: none;
+  padding: 0;
+  li {
+    margin: 0 8px;
+  }
+  img {
+    cursor: pointer;
+    width: 20px;
+    transition: border 0.1s ease;
+  }
+  img:hover, li.active img {
+    border: 2px solid #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+}

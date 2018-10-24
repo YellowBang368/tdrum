@@ -19,6 +19,8 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 5.3.1'
 gem 'bcrypt'
+gem 'rails_admin'
+gem 'devise'
 
 
 group :development, :test do
