@@ -5,8 +5,8 @@
     <div class="row justify-content-center">
       <div class="col-md-5">
         <h4 class="section-title">Инструменты</h4>
-        <p>aaaaaaaaaaaa aaaa aaaaaaaaa aaaaaaaaaaaa aaaaaaaaaa  aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa.</p>
-        <p>aaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaa aaa aaaaa aaaaaт.</p>
+        <p style="text-align: justify">aaaaaaaaaaaa aaaa aaaaaaaaa aaaaaaaaaaaa aaaaaaaaaa  aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa.</p>
+        <p style="text-align: justify">aaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaa aaa aaaaa aaaaaт.</p>
       </div>
     </div>
   </div>
@@ -14,7 +14,7 @@
 
 <div class="color-light filter">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-md-3 col-sm-12">
         <a class="active" data="all-products">Все</a>
       </div>
@@ -27,12 +27,15 @@
       <div class="col-md-3 col-sm-12">
         <a data="big-drums">Большие</a>
       </div>
+      <div class="col-md-3 col-sm-12">
+        <a data="accessoreis">Аксессуары</a>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="content" id="all-products">
-  <%= render partial: "post-products", :locals => {:show_products => @products, :see_all_button => false} %>
+  <%= render partial: "post-products", :locals => {:show_products => @products+@accessoreis, :see_all_button => false} %>
 </div>
 <div class="content" id="small-drums">
   <%= render partial: "post-products", :locals => {:show_products => @small_drums, :see_all_button => false} %>
@@ -42,4 +45,7 @@
 </div>
 <div class="content" id="big-drums">
   <%= render partial: "post-products", :locals => {:show_products => @big_drums, :see_all_button => false} %>
+</div>
+<div class="content" id="accessoreis">
+  <%= render partial: "post-products", :locals => {:show_products => @accessoreis, :see_all_button => false} %>
 </div>

@@ -7,6 +7,7 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
+    @accessoreis = Accessory.all
     @small_drums = Product.where(size: 13);
     @medium_drums = Product.where(size: 15);
     @big_drums = Product.where(size: 25);

@@ -1,0 +1,16 @@
+$(document).ready(function(){
+    $(".open-buy-dialog").click(function(){
+      $(".overlay-modal").css("display", "block");
+      $(".modal").css("display", "flex");
+    });
+
+    $(".modal-close").click(function(){
+      $(".overlay-modal").css("display", "none");
+      $(".modal").css("display", "none");
+    });
+
+    $(".choose-color li").click(function(){
+      $(".choose-color li").removeClass("active");
+      $(this).addClass("active");
+    });
+});
