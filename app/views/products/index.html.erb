@@ -27,9 +27,11 @@
       <div class="col-md-3 col-sm-12">
         <a data="big-drums">Большие</a>
       </div>
+      <% if @accessoreis.present? %>
       <div class="col-md-3 col-sm-12">
         <a data="accessoreis">Аксессуары</a>
       </div>
+      <% end %>
     </div>
   </div>
 </div>
@@ -46,6 +48,8 @@
 <div class="content" id="big-drums">
   <%= render partial: "post-products", :locals => {:show_products => @big_drums, :see_all_button => false} %>
 </div>
+<% if @accessoreis.present? %>
 <div class="content" id="accessoreis">
   <%= render partial: "post-products", :locals => {:show_products => @accessoreis, :see_all_button => false} %>
 </div>
+<% end %>
