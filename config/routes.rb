@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   post "products/new", to: "products#create"
 
   resources :reviews
+  resources :accessories
 end
