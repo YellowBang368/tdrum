@@ -27,7 +27,7 @@
           </div>
           <div class="col-lg-2 col-md-3">
             <%= link_to root_path, class: "logo" do %>
-              <h4>TetaDrum.com</h4>
+              <h4>TetaDrum</h4>
             <% end %>
           </div>
           <div class="col-lg-5 col-md-4 justify-content-center">
@@ -51,11 +51,11 @@
         <div class="row justify-content-center">
           <div class="col-md-6 col-sm-12" >
             <ul class="contacts">
-              <li><a href="#">Техпроцесс</a></li>
-              <li><a href="#">Как играть</a></li>
-              <li><a href="#">Эффекты</a></li>
-              <li><a href="#">Блог</a></li>
-              <li><a href="#">Интерактивный инструмент tetaDram</a></li>
+              <li><%= link_to "Техпроцесс", process_path %></li>
+              <li><%= link_to "Как играть", howtoplay_path %></li>
+              <li><%= link_to "Эффекты", effects_path %></li>
+              <li><%= link_to "Блог", blog_path %></li>
+              <li><%= link_to "Интерактивный инстурмент TetaDrum", teta_path %></li>
             </ul>
           </div>
           <div class="col-md-6 col-sm-12">

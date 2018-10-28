@@ -7,7 +7,19 @@ class PagesController < ApplicationController
   def ai
   end
 
+  def teta
+  end
+
   def investors
+  end
+
+  def howtoplay
+  end
+
+  def effects
+  end
+
+  def blog
   end
 
   def about
