@@ -1,0 +1,6 @@
+$(document).ready(function(){
+  $(".modal .choose-color li").click(function(){
+    var $selectedColor = $(this).attr("data");
+    $("#selected-color").html($selectedColor+"");
+  })
+});

@@ -15,11 +15,11 @@
         </div>
         <div class="col-md-3 col-lg-2 to-end">
           <ul class="choose-color">
-            <li><%= image_tag "https://image.ibb.co/e7JtML/color.png" %></li>
-            <li><%= image_tag "https://image.ibb.co/e7JtML/color.png" %></li>
-            <li><%= image_tag "https://image.ibb.co/e7JtML/color.png" %></li>
+            <% @product.colors.each do |color| %>
+            <li data="<%= color %>"><%= image_tag color_image_path(color) %></li>
+            <% end %>
           </ul>
-          <p>Цвет: золотой</p>
+          <p>Цвет: <span id="selected-color"><%= @product.colors.first %></span></p>
         </div>
         <div class="col-md-2 col-lg-2">
           <p class="product-price"><%= @product.price %>$</p>
