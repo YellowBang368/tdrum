@@ -11,4 +11,4 @@ $(document).ready(function(){
       $this.closest(".review").find(".body").removeClass("closed").addClass("opened");
     }
   });
-})
+});

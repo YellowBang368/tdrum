@@ -1,0 +1,33 @@
+<section class="color-light blog">
+  <div class="container">
+    <div class="row" style="padding: 0 50px;">
+      <% @posts.each do |post| %>
+        <div class="col-md-6 col-sm-12">
+          <%= link_to post, class: "post" do %>
+            <div class="row">
+              <div class="col-sm-12 post-body">
+                <% if post.images.present?  %>
+                  <%= image_tag post.images[0].url %>
+                <% end %>
+                <h4><%= post.title %></h4>
+                <p><%= post.body %></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7 col-sm-12">
+                <ul class="post-params">
+                  <li><%= post.created_at.strftime("%d.%m.%Y") %></li>
+                  <li><i class="far fa-eye"></i>&nbsp;&nbsp; 3588</li>
+                </ul>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <p class="read-more">читать больше<i class="fa fa-angle-right"></i></p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</section>

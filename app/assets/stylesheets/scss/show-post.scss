@@ -1,0 +1,44 @@
+.show-post {
+  .post-header {
+    padding-bottom: 170px;
+  }
+  .post-header .container {
+    position: relative;
+  }
+  .post-avatar {
+    width: 70%;
+    height: 300px;
+    position: absolute;
+    bottom: -320px;
+    right: 15%;
+  }
+  .post-body {
+    padding-top: 200px;
+    p {
+      text-align: justify;
+    }
+  }
+  .fotorama img {
+    width: 100%;
+    
+  }
+}
+
+.show-post .post-params {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  justify-content: center;
+  li {
+    list-style: none;
+    font-size: .875em;
+    line-height: 1.71;
+    margin: 0 10px;
+    color: #454545;
+    i {
+      margin-left: 5px;
+    }
+  }
+}

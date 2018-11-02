@@ -1,0 +1,3 @@
+class PostAttachment < ApplicationRecord
+
+end

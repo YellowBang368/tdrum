@@ -1,0 +1,43 @@
+<div class="show-post">
+  <section class="color-dark post-header">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          <h4 class="section-title" style="margin-top: 125px;"><%= @post.title %></h4>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-2">
+          <ul class="post-params">
+            <li><%= @post.created_at.strftime("%d.%m.%Y") %></li>
+            <li><i class="far fa-eye"></i>3588</li>
+          </ul>
+        </div>
+      </div>
+      <%= image_tag @post.images.first.url, class: "post-avatar"%>
+    </div>
+  </section>
+
+  <section class="color-light post-body">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <p class="text-lead"><%= @post.body %></p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="fotorama" style="margin-top: 75px;">
+            <% if @post.images.count > 1 %>
+            <% @post.images.drop(1).each do |image| %>
+            <%= image_tag image.url %>
+            <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%= render partial: "pages/post_contact_form" %>
+</div>

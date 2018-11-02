@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :post_attachments
   get 'posts/index'
 
   devise_for :users
@@ -18,6 +19,9 @@ Rails.application.routes.draw do
 
   resources :products
   post "products/new", to: "products#create"
+
+  get "blog", to: "posts#index"
+  resources :posts
 
   resources :reviews
   resources :accessories
