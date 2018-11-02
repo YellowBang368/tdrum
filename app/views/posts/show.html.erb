@@ -29,7 +29,7 @@
         <div class="col-md-6">
           <div class="fotorama" style="margin-top: 75px;">
             <% if @post.images.count > 1 %>
-            <% @post.images.drop(1).each do |image| %>
+            <% @post.images.each do |image| %>
             <%= image_tag image.url %>
             <% end %>
             <% end %>
