@@ -7,24 +7,37 @@ class PagesController < ApplicationController
   def ai
   end
 
+  def proc
+    @posts = posts_with_topic("техпроцесс", Post.all)
+  end
+
   def teta
+    @posts = posts_with_topic("интерактивный инструмент", Post.all)
   end
 
   def investors
   end
 
   def howtoplay
+    @posts = posts_with_topic("как играть", Post.all)
   end
 
   def effects
-  end
-
-  def blog
+    @posts = posts_with_topic("эффекты", Post.all)
   end
 
   def about
   end
 
   def contacts
+  end
+
+  private
+  def posts_with_topic(topic, posts)
+    result = []
+    posts.each do |post|
+      result << post if post.topic.include?(topic)
+    end
+    return result
   end
 end

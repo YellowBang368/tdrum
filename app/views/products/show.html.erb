@@ -2,13 +2,14 @@
   <div class="container">
     <div class="row justify-content-center" style="margin-top: 75px;">
       <div class="col-md-3 col-sm-12">
-        <h4 class="section-title">Инстумент <%= @product.size %>" </br>«<%= @product.title %>»</h4>
+        <h4 class="section-title">Инструмент <%= @product.size %><span style="color: #fff">"</span> </br>«<%= @product.title %>»</h4>
         <h2 class="category">Маленький</h2>
         <p>Диаметр: 22 сантиметра
         8,66 дюйма</br>
         Высота: 12 сантиметров
         4,72 дюйма</p>
-        <p>8 треугольных, симметрично расположенных лепестка, 8 нот</p>
+        <p><%= @product.notes.present? ? product.notes : "no" %> треугольных, симметрично расположенных лепестка,
+           <%= @product.notes.present? ? product.notes : "no" %> нот</p>
       </div>
       <div class="col-md-4 col-sm-12">
         <div class="product-circle">

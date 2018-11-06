@@ -37,7 +37,8 @@
 </div>
 
 <div class="content" id="all-products">
-  <%= render partial: "post-products", :locals => {:show_products => @products+@accessoreis, :see_all_button => false} %>
+  <%= render partial: "post-products", :locals => {:show_products => @products, :see_all_button => false} %>
+  <%= render partial: "accessories/post-accessories", :locals => {:show_accessories => @accessories} %>
 </div>
 <div class="content" id="small-drums">
   <%= render partial: "post-products", :locals => {:show_products => @small_drums, :see_all_button => false} %>
@@ -50,6 +51,6 @@
 </div>
 <% if @accessoreis.present? %>
 <div class="content" id="accessoreis">
-  <%= render partial: "post-products", :locals => {:show_products => @accessoreis, :see_all_button => false} %>
+  <%= render partial: "accessories/post-accessories", :locals => {:show_accessories => @accessories} %>
 </div>
 <% end %>

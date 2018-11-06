@@ -15,4 +15,6 @@
   </div>
 </section>
 
-<%= render partial: "post_contact_form" %>
+<div>
+  <%= render partial: "posts/post-posts", :locals => {:show_posts => @posts, :see_all_button => false} %>
+</div>

@@ -11,11 +11,9 @@
             <div class="row">
               <div class="col-md-8 col-sm-12">
                 <h4 class="product-title"><%= product.title %></h4>
-                <% if product.size.present? %>
-                  <p class="product-params"><%= product.size %> дюймов 8 нот</p>
-                <% else %>
-                  <p class="product-params">no дюймов 8 нот</p>
-                <% end %>
+                <p class="product-params">
+                  <%= product.size.present? ? product.size : "no" %> дюймов <%= product.notes.present? ? product.notes : "no" %> нот
+                </p>
               </div>
               <div class="col-md-4 col-sm-12 full-height justify-content-center">
                 <p class="product-price">$ <%= product.price %></p>

@@ -18,6 +18,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(title, body, post_attachments_attributes: [:id, :post_id, :avatar])
+    params.require(:post).permit(title, body, topic)
   end
 end

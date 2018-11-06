@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get "contacts", to: "pages#contacts"
   get "investors", to: "pages#investors"
   get "teta", to: "pages#teta"
-  get "process", to: "pages#process"
+  get "process", to: "pages#proc"
   get "howtoplay", to: "pages#howtoplay"
   get "effects", to: "pages#effects"
   get "blog", to: "posts#index"

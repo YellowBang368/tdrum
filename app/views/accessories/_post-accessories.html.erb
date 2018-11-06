@@ -1,0 +1,30 @@
+<section class="color-light products">
+  <div class="container conteiner-products">
+    <div class="row" style="padding: 0 50px;">
+      <div class="col-md-12">
+        <h4 class="section-title">Акссессуары</h4>
+      </div>
+      <% show_accessories.each do |accessory| %>
+      <div class="col-md-4 col-sm-12">
+        <%= link_to accessory, method: "GET" do %>
+        <div class="product">
+          <div class="product-bg"></div>
+          <div class="product-content">
+            <%= image_tag "firstdrum.png" %>
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <h4 class="product-title"><%= accessory.title %></h4>
+              </div>
+              <div class="col-md-4 col-sm-12 full-height justify-content-center">
+                <p class="product-price">$ <%= accessory.price %></p>
+                <%= link_to "заказать", accessory, method: "GET", class:"product-order-button" %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</section>
