@@ -21,6 +21,11 @@ gem 'bcrypt'
 gem 'rails_admin'
 gem 'devise'
 gem 'carrierwave'
+gem 'carrierwave-aws'
+gem 'mini_magick'
+gem 'aws-sdk-rails'
+gem 'figaro'
+gem 'fog-aws'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
