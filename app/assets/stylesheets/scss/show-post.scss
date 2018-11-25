@@ -6,11 +6,12 @@
     position: relative;
   }
   .post-avatar {
-    width: 70%;
-    height: 300px;
+    display: flex;
+    width: 95%;
+    height: 180px;
     position: absolute;
-    bottom: -320px;
-    right: 15%;
+    bottom: -90px;
+    right: 2.5%;
   }
   .post-body {
     padding-top: 200px;
@@ -20,7 +21,7 @@
   }
   .fotorama img {
     width: 100%;
-    
+
   }
 }
 
