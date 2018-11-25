@@ -1,5 +1,7 @@
 class Product < ApplicationRecord
   serialize :colors, Array
+  mount_uploaders :images, ImageUploader
+
 
   validates :title, :price, presence: true
   before_save :remove_first_color

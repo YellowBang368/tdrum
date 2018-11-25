@@ -8,12 +8,16 @@
         8,66 дюйма</br>
         Высота: 12 сантиметров
         4,72 дюйма</p>
-        <p><%= @product.notes.present? ? product.notes : "no" %> треугольных, симметрично расположенных лепестка,
-           <%= @product.notes.present? ? product.notes : "no" %> нот</p>
+        <p><%= @product.notes.present? ? @product.notes : "no" %> треугольных, симметрично расположенных лепестка,
+           <%= @product.notes.present? ? @product.notes : "no" %> нот</p>
       </div>
       <div class="col-md-4 col-sm-12">
         <div class="product-circle">
-          <%= image_tag "firstdrum.png", class: "product-image" %>
+          <% if product.images.present? %>
+            <%= image_tag product.images[0].url %>
+          <% else %>
+            <%= image_tag "firstdrum.png" %>
+          <% end %>
           <ul class="drum-colors">
             <% @product.colors.each do |color| %>
             <li><%= image_tag color_image_path(color) %></li>
