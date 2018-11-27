@@ -3,7 +3,7 @@ class Product < ApplicationRecord
   mount_uploaders :images, ImageUploader
 
 
-  validates :title, :price, presence: true
+  validates :title, :price, :images, presence: true
   before_save :remove_first_color
 
   def colors_enum

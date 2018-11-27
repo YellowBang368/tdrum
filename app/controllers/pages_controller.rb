@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @products = Product.all
+    @products = Product.all[0..5]
     @reviews = Review.all[0..3]
   end
 
