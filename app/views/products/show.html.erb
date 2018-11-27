@@ -14,9 +14,9 @@
       <div class="col-md-4 col-sm-12">
         <div class="product-circle">
           <% if @product.images.present? %>
-            <%= image_tag @product.images[0].url %>
+            <%= image_tag @product.images[0].url, class: "product-image" %>
           <% else %>
-            <%= image_tag "firstdrum.png" %>
+            <%= image_tag "firstdrum.png", class: "product-image"  %>
           <% end %>
           <ul class="drum-colors">
             <% @product.colors.each do |color| %>
