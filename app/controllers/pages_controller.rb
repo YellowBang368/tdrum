@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def index
     @products = Product.all
-    @reviews = Review.all
+    @reviews = Review.all[0..3]
   end
 
   def ai
