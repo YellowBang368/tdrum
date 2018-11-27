@@ -40,4 +40,19 @@
     </div>
   </section>
 
+  <div class="header-products color-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <h4 class="section-title">Следующие новости</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <%= render partial: "post-posts", :locals => {:show_posts => @posts.shuffle, :see_all_button => false} %>
+  </div>
+
+
 </div>

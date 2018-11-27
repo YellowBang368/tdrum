@@ -5,7 +5,7 @@ class Post < ApplicationRecord
   serialize :topic, Array
 
   validates :title, presence: true
-  before_save :remove_first_topic
+  #before_save :remove_first_topic
 
   def topic_enum
     ["техпроцесс", "как играть", "эффекты", "интерактивный инструмент"]

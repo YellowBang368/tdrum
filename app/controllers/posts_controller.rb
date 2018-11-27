@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    @posts = Post.all.shuffle[0..1]
     @post = Post.find(params[:id])
     redirect_back fallback_location: root_path unless @post.images.present?
   end
