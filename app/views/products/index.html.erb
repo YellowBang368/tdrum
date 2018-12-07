@@ -5,8 +5,9 @@
     <div class="row justify-content-center">
       <div class="col-md-5">
         <h4 class="section-title">Инструменты</h4>
-        <p style="text-align: justify">aaaaaaaaaaaa aaaa aaaaaaaaa aaaaaaaaaaaa aaaaaaaaaa  aaaaaaaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaa.</p>
-        <p style="text-align: justify">aaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaa aaa aaaaa aaaaaт.</p>
+        <p style="text-align: justify">Играть на нашем инструменте легко и просто, невозможно ошибится в  момент импровизации, ваша Муза всегда будет рядом с вами.
+           Нежные проникновенные звуки, яркие и сочные, игра руками или палочками. Все возможно с этим инновационном инструментом.
+           Постоянно обновляемая платформа расширит возможности инструмента до центра обработки звука в походных условиях.</p>
       </div>
     </div>
   </div>
@@ -27,9 +28,14 @@
       <div class="col-md-3 col-sm-12">
         <a data="big-drums">Большие</a>
       </div>
-      <% if @accessoreis.present? %>
+      <% if @accessories.present? %>
       <div class="col-md-3 col-sm-12">
         <a data="accessoreis">Аксессуары</a>
+      </div>
+      <% end %>
+      <% if @cases.present? %>
+      <div class="col-md-3 col-sm-12">
+        <a data="accessoreis">Чехлы</a>
       </div>
       <% end %>
     </div>
@@ -39,6 +45,7 @@
 <div class="content" id="all-products">
   <%= render partial: "post-products", :locals => {:show_products => @products, :see_all_button => false} %>
   <%= render partial: "accessories/post-accessories", :locals => {:show_accessories => @accessories} %>
+  <%= render partial: "accessories/post-accessories", :locals => {:show_accessories => @cases, :title => "Чехлы"} %>
 </div>
 <div class="content" id="small-drums">
   <%= render partial: "post-products", :locals => {:show_products => @small_drums, :see_all_button => false} %>
@@ -52,5 +59,10 @@
 <% if @accessoreis.present? %>
 <div class="content" id="accessoreis">
   <%= render partial: "accessories/post-accessories", :locals => {:show_accessories => @accessories} %>
+</div>
+<% end %>
+<% if @cases.present? %>
+<div class="content" id="accessoreis">
+  <%= render partial: "accessories/post-accessories", :locals => {:show_accessories => @cases, :title => "Чехлы"} %>
 </div>
 <% end %>

@@ -20,9 +20,9 @@
         <div class="row justify-content-center">
           <div class="col-lg-5 col-md-4 justify-content-center">
             <ul class="nav-menu">
-              <li><%= link_to "О проекте", about_path %></li>
-              <li><%= link_to "Инструменты", products_path %></li>
-              <li><%= link_to "ИИ", ai_path %></li>
+              <li><%= link_to I18n.t("titles.aboutTheProject"), about_path %></li>
+              <li><%= link_to I18n.t("titles.instruments"), products_path %></li>
+              <li><%= link_to I18n.t("titles.ai"), ai_path %></li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-3">
@@ -32,11 +32,11 @@
           </div>
           <div class="col-lg-5 col-md-4 justify-content-center">
             <ul class="nav-menu">
-              <li><%= link_to "Инвесторам", investors_path %></li>
-              <li><%= link_to "Отзывы", reviews_path %></li>
+              <li><%= link_to I18n.t("titles.toInvestors"), investors_path %></li>
+              <li><%= link_to I18n.t("titles.reviews"), reviews_path %></li>
               <ul class="change-lang">
-                <li><a class="dot" href="#">рус</a></li>
-                <li><a href="#">eng</a></li>
+                <li><%= link_to "рус", change_locale_url(:locale => "ru"), method: "POST" %></li>
+                <li><%= link_to "eng", change_locale_url(:locale => "en"), method: "POST" %></li>
               </ul>
             </ul>
           </div>
@@ -53,17 +53,17 @@
         <div class="row justify-content-center">
           <div class="col-md-6 col-sm-12" >
             <ul class="contacts">
-              <li><%= link_to "Техпроцесс", process_path %></li>
-              <li><%= link_to "Как играть", howtoplay_path %></li>
-              <li><%= link_to "Эффекты", effects_path %></li>
-              <li><%= link_to "Интерактивный инстурмент TetaDrum", teta_path %></li>
-              <li><%= link_to "Блог", blog_path %></li>
+              <li><%= link_to I18n.t("titles.techProcess"), process_path %></li>
+              <li><%= link_to I18n.t("titles.howToPlay"), howtoplay_path %></li>
+              <li><%= link_to I18n.t("titles.effects"), effects_path %></li>
+              <li><%= link_to I18n.t("titles.interactiveInstrument"), teta_path %></li>
+              <li><%= link_to I18n.t("titles.blog"), blog_path %></li>
             </ul>
           </div>
           <div class="col-md-6 col-sm-12">
             <form class="justify-content-center">
-              <input placeholder="email/телефон"></input>
-              <button class="button">Оставить</button>
+              <input placeholder="email/<%= I18n.t('form.phone').downcase %>"></input>
+              <button class="button"><%= I18n.t("form.leave") %></button>
             </form>
             <ul class="social-networks">
               <li><a href='https://vk.com/gluckofon'><i class="fab fa-vk"></i></a></li>
@@ -77,6 +77,9 @@
 
     <% if controller_name == "products" && action_name == "show" %>
     <%= render partial: "layouts/dialog" %>
+    <% end %>
+    <% if controller_name == "reviews" && action_name == "index" %>
+    <%= render partial: "reviews/dialog" %>
     <% end %>
   </body>
 </html>

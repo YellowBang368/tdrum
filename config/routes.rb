@@ -10,10 +10,13 @@ Rails.application.routes.draw do
   get "contacts", to: "pages#contacts"
   get "investors", to: "pages#investors"
   get "teta", to: "pages#teta"
+  get "tetastatus", to: "pages#tetastatus"
   get "process", to: "pages#proc"
   get "howtoplay", to: "pages#howtoplay"
   get "effects", to: "pages#effects"
   get "blog", to: "posts#index"
+
+  post "change_locale", to: "application#change_locale"
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 

@@ -5,7 +5,7 @@ footer {
   padding: 50px 0;
   h4 {
     color: #fff;
-    font-size: 17px;
+    font-size: 22px; // 30% 17px
     font-family: "Raleway", sans-serif;
   }
   ul {
@@ -27,7 +27,7 @@ footer {
       margin-bottom: 5px;
       cursor: pointer;
       color: $orange;
-      font-size: 16px;
+      font-size: 20px; // 30% 16px
       font-family: "Fira Sans", sans-serif;
       text-decoration: none;
     }
@@ -57,7 +57,7 @@ footer {
   p {
     color: #fff;
     font-family: "Fira Sans", sans-serif;
-    font-size: 14px;
+    font-size: 19px; // 30% 16px
   }
   .social-networks {
     display: -webkit-box;
@@ -70,7 +70,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     a {
-      font-size: 16px;
+      font-size: 19px; // 30% 16px
     }
     li {
       margin: 0 15px;

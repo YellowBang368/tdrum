@@ -11,4 +11,19 @@ $(document).ready(function(){
       $this.closest(".review").find(".body").removeClass("closed").addClass("opened");
     }
   });
+
+  $(".open-review-dialog").click(function(){
+    $(".overlay-modal").css("display", "block");
+    $(".modal").css("display", "flex");
+  });
+
+  $(".modal-close").click(function(){
+    $(".overlay-modal").css("display", "none");
+    $(".modal").css("display", "none");
+  });
+
+  $(".choose-color li").click(function(){
+    $(".choose-color li").removeClass("active");
+    $(this).addClass("active");
+  });
 });

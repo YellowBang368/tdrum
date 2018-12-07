@@ -7,10 +7,11 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
-    @accessories = Accessory.all
+    @accessories = Accessory.where(case: false)
     @small_drums = Product.where(size: 13);
     @medium_drums = Product.where(size: 15);
     @big_drums = Product.where(size: 25);
+    @cases = Accessory.where(case: true)
   end
 
   def new

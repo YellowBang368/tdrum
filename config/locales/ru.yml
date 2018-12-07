@@ -1,0 +1,21 @@
+ru:
+  titles:
+    aboutTheProject: "О проекте"
+    instruments: "Инструменты"
+    ai: "ИИ"
+    toInvestors: "Инвесторам"
+    reviews: "Отзывы"
+    techProcess: "Тех процесс"
+    howToPlay: "Как играть"
+    effects: "Эффекты"
+    interactiveInstrument: "Интерактивный инстурмент TetaDrum"
+    blog: "Блог"
+  index:
+    intro: "Приветствуем Вас на сайте смарт инструмента TetaDrum — наш ИИ обнаружил у Вас высокое желание приобрести наш девайс, нет ничего проще — выберите подходящий размер, дизайн и функционал и нажмите кнопку купить!"
+  form:
+    phone: "Телефон"
+    leave: "Оставить"
+    anyQuestions: "Остались вопросы?"
+    name: "Имя"
+    yourQuestion: "Ваш вопрос"
+    submit: "Отправить"
