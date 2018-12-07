@@ -30,12 +30,12 @@
       </div>
       <% if @accessories.present? %>
       <div class="col-md-3 col-sm-12">
-        <a data="accessoreis">Аксессуары</a>
+        <a data="accessories">Аксессуары</a>
       </div>
       <% end %>
       <% if @cases.present? %>
       <div class="col-md-3 col-sm-12">
-        <a data="accessoreis">Чехлы</a>
+        <a data="cases">Чехлы</a>
       </div>
       <% end %>
     </div>
@@ -56,13 +56,13 @@
 <div class="content" id="big-drums">
   <%= render partial: "post-products", :locals => {:show_products => @big_drums, :see_all_button => false} %>
 </div>
-<% if @accessoreis.present? %>
-<div class="content" id="accessoreis">
+<% if @accessories.present? %>
+<div class="content" id="accessories">
   <%= render partial: "accessories/post-accessories", :locals => {:show_accessories => @accessories} %>
 </div>
 <% end %>
 <% if @cases.present? %>
-<div class="content" id="accessoreis">
+<div class="content" id="cases">
   <%= render partial: "accessories/post-accessories", :locals => {:show_accessories => @cases, :title => "Чехлы"} %>
 </div>
 <% end %>
