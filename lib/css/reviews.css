@@ -1,0 +1,45 @@
+.reviews .col-md-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.review {
+  display: flex;
+  height: 35%;
+  cursor: pointer;
+  position: relative;
+  margin: 2.5%;
+  padding: 32px;
+  background: #313131;
+  flex-direction: column;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.review .row {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+.review:hover {
+  background: #1f1f1f;
+}
+
+.review-recipinet {
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.3);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.review-text {
+  font-size: 14px;
+  font-weight: 100;
+  color: #fff;
+  line-height: 1.44;
+  margin-bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+}
