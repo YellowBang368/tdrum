@@ -27,7 +27,9 @@
       </div>
       <div class="col-md-3 col-sm-12">
         <p class="product-price">$<%= @product.price %></p>
-        <h2 style="margin-top: 80px;">Цвета</h2>
+        <% if @product.colors.present? %>
+          <h2 style="margin-top: 80px;">Цвета</h2>
+        <% end %>
         <ul class="colors">
           <% @product.colors.each do |color| %>
           <li><p><%= color.capitalize %></p></li>

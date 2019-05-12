@@ -4,12 +4,8 @@ class AdminsController < ApplicationController
   # GET /admins
   # GET /admins.json
   def index
-    if current_user.present?
-      @products = Product.all
-      @reviews = Review.all
-    else
-      redirect_to root_path
-    end
+    @products = Product.all
+    @reviews = Review.all
   end
 
   # GET /admins/1
@@ -67,13 +63,12 @@ class AdminsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_admin
-      @admin = Admin.find(params[:id])
-    end
+  def set_admin
+    redirect_to new_user_session_path
+    @admin = Admin.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def admin_params
-      params.require(:admin).permit(:login, :password, :password_confirmation)
-    end
+  def admin_params
+    params.require(:admin).permit(:login, :password, :password_confirmation)
+  end
 end
