@@ -10,33 +10,11 @@
         <div class="col-sm-2">
           <ul class="post-params">
             <li><%= @post.created_at.strftime("%d.%m.%Y") %></li>
-            <li><i class="far fa-eye"></i>3588</li>
+            <li><i class="far fa-eye"></i><%= rand(198) %></li>
           </ul>
         </div>
       </div>
       <%= image_tag @post.header_image[0].url, class: "post-avatar"%>
-    </div>
-  </section>
-
-  <section class="color-light post-body">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <p class="text-lead"><%= simple_format @post.body, style: "color: #c4c4c4" %></p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="fotorama" style="margin-top: 75px;">
-            <% if @post.images.count > 2 %>
-            <% @post.images.each_with_index do |image, index| %>
-            <% next if index == 0 %>
-            <%= image_tag image.slider.url %>
-            <% end %>
-            <% end %>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 

@@ -12,7 +12,7 @@ CarrierWave.configure do |config|
       aws_secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"],                        # required unless using use_iam_profile
       region:                'eu-central-1'                  # optional, defaults to 'us-east-1'
     }
-    config.fog_directory  = 'tdrumproduction'
+    config.fog_directory  = 'tdrum'
   else
     config.storage :file
     config.enable_processing = false if Rails.env.test?
